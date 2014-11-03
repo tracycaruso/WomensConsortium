@@ -1,0 +1,112 @@
+// Variables
+@import "../settings/settings";
+
+/**************************/
+/** base/_grid.scss **/
+/**************************/
+
+/* Main Container */
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+
+/* The Columns */
+[class^="col-"]{
+	float: left;
+	padding: 0 $gutter;
+}
+
+
+
+
+
+/* The Row */
+.row{
+	margin-right: -$gutter;
+	margin-left: -$gutter;
+}
+
+.row:after{
+	content: "";
+
+	display: table;
+	clear: both;
+}
+
+
+/* Column Widths */
+@for $i from 1 through $column-count {
+	.col-#{$i} {
+		width: ( 100 / $column-count ) * $i * 1%;
+	}
+}
+
+.col-half{
+	width:( 100 / 2 ) * 1%;
+}
+
+.col-third{
+	width:( 100 / 3 ) * 1%;
+}
+
+.col-two-third{
+	width:( 100 / 3 ) * 2%;
+}
+
+.col-quarter{
+	width:( 100 / 4 ) * 1%;
+}
+
+.col-three-quarter{
+	width:( 100 / 4 ) * 3%;
+}
+
+
+
+img{
+	max-width:100%;
+	width:100%;
+	height:auto;
+}
+
+
+.reverse{
+	float:right;
+}
+
+
+
+
+/* Responsive Behavior */
+@media ( max-width:1024px ) {
+	[class^="col-"]{
+		padding: 0 $gutter / 2;
+	}
+
+	.row{
+		margin-right: -$gutter/ 2;
+		margin-left: -$gutter / 2;
+	}
+
+}
+
+
+
+
+@media ( max-width:480px ) {
+	[class^="col-"]{
+		width:100%;
+	}
+
+	.reverse{
+		float:none;
+	}
+
+
+}
+
+
+

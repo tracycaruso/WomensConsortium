@@ -1,0 +1,105 @@
+@import "../settings/settings";
+
+/**************************/
+/** components/_content-styles.scss **/
+/**************************/
+
+
+.style-1, 
+.style-2, 
+.style-3, 
+.style-4{
+	button,
+	.btn,
+	a.btn{
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+}
+.style-1{
+	background-color:$primary-dark;
+	background-image:url(../images/bg/cross-hatch-2.png);
+	color:#fff;
+
+	
+}
+
+.style-2{
+	background-color: $tertiary-dark;
+	padding: 2em 0;
+}
+
+
+.style-3{
+	background-color: $secondary-light;
+	background-image:url(../images/bg/cross-hatch.png);
+	padding-left:15%;
+	padding-right: 15%;
+}
+
+
+.style-4{
+	background-color: $base-medium;  
+	color:#fff;
+		
+		
+}
+
+
+.style-5{
+	background-color: #fff;
+
+	h1{
+		color:$primary-medium;
+	}
+
+
+}
+
+
+
+.style-6{
+    background-color: #3c4359;
+    color: #fff;
+    margin: -1.4em -4em 0 -2em;
+    padding: 3.5em 0 1em 2em;
+
+    h1{
+    	text-align: left;
+    }
+
+}
+
+@media ( max-width:1024px ) {
+
+
+	.style-6{
+    margin: -1.4em -3.75em 0 -1em;
+    padding: 3em 2em 1em 1em;
+}
+
+}
+
+
+@media( max-width:768px){
+	.style-6{
+    margin: -1.4em -3em 0 -1em;
+}
+
+}
+
+
+
+@media ( max-width:480px ) {
+	.style-3{
+		padding-left:2%;
+		padding-right: 2%;
+	}
+
+	.style-6 {
+    margin: 0 -5%;
+    padding-left: 1.7em;
+    padding-top: 1em;
+}	
+}

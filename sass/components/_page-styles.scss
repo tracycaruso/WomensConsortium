@@ -1,0 +1,56 @@
+@import "../settings/settings";
+
+/**********************/
+/* components/_page-styles.scss **/
+/***********************/
+body{
+	background-color: #F8F8F8;
+}
+
+.about,
+.events,
+.campuses,
+.join,
+.contactPage, 
+.account{
+	background-size: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+
+}
+
+.campuses{
+	background-size: auto 100%;
+}
+
+
+.about{background-image: url(../images/about.jpg);}
+.events{background-image: url(../images/events.jpg);}
+.campuses{background-image: url(../images/campuses.jpg);
+	footer{
+		margin-top:1em;
+		} 
+	}
+.join{background-image: url(../images/join.jpg);}
+.contactPage{background-image: url(../images/contact.jpg);}
+.account{background-image: url(../images/account.jpg);}
+
+
+
+/** Responsive Max-Width 480px **/
+@media ( max-width:480px ) {
+	
+.about,
+.events,
+.join,
+.contactPage, 
+.account{
+	background-size: 480px 100%;
+
+}
+
+
+
+
+}

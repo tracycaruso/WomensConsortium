@@ -1,0 +1,130 @@
+@import "../settings/settings";
+
+/**************************/
+/** components/_icons.scss **/
+/**************************/
+
+/* Decorative Icons */
+
+.icon-arrow-primary{
+	
+	&:before{
+		content: "\e132";
+		display:block;
+		
+		color:#fff;
+		font-style:normal;
+		font-family:icomoon;
+		font-size:1.2em;
+	}
+
+
+	&:hover:before{
+		color:$primary-dark;
+	}
+	
+	
+}
+
+.icon-arrow-secondary{
+	&:before{
+	@extend .icon-arrow-primary;
+	color: $secondary-medium;
+	}
+	&:hover:before{
+		color:darken($secondary-medium, 30%);
+	}
+
+}
+
+.icon-large{
+	font-size:2em;
+	line-height:1.4em;
+}
+
+
+/* Social Icons*/
+.social{
+
+	-moz-border-radius: $icon-roundness;
+	-webkit-border-radius: $icon-roundness;
+	border-radius: $icon-roundness;
+	
+	display: inline-block;
+	font-size: .65em;
+	height:20px;
+	line-height: 2;
+	width:20px;
+
+	&:after{
+		padding-left: 5px;
+
+		color:#fff;
+		font-family: 'icomoon';
+	}
+
+}
+
+.social-facebook{
+	@extend .social;
+	background-color: $facebook-bg-color;
+
+	&:after{
+		content:"\e169";
+	}
+
+	&:hover{
+		background-color: darken($facebook-bg-color, 10%);
+	}
+}
+
+
+.social-twitter{
+	@extend .social;
+
+	background-color: $twitter-bg-color;
+
+
+	&:after{
+		content:"\e16d";
+	}
+	
+	&:hover{
+		background-color: darken($twitter-bg-color, 10%);
+	}
+
+}
+
+
+
+.social-google{
+	@extend .social;
+
+	background-color: $google-bg-color;
+
+
+	&:after{
+		content:"\e164";
+	}
+	
+	&:hover{
+		background-color: darken($google-bg-color, 10%);
+	}
+
+}
+
+
+.meta, .meta-dark{
+	color:$meta-light-text-color;
+		
+		time, span{
+			padding:.5em .5em .5em 0 ;
+		}
+	
+}
+
+.meta-dark{
+	color:$meta-dark-text-color;
+}
+
+

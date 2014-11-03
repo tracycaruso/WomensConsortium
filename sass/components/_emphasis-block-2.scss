@@ -1,0 +1,68 @@
+// Variables
+@import "../settings/settings";
+
+/**************************/
+/** components/_emphasis-block-2.scss **/
+/**************************/
+
+.eb2{
+	h2,
+	h2 a{
+		color:$base-light;
+	}
+	background-color: #fff;
+	width:33%;
+	margin:.1666665%;
+	padding:1em 1em 0 1em ;
+
+	img{
+		width:33%;
+		margin:0 auto;
+		display:block;
+		
+	}
+	p{
+		font-style:italic;
+		color:$emphasis2-text-color;
+	}
+	ul, ul li a{
+		color:$emphasis2-text-color;
+
+		&:hover{
+			color:darken($emphasis2-text-color, 10%);
+		}
+
+		
+	}
+
+	hr{
+		background-color:$emphasis2-hr-color;
+	}
+
+	.btn-sd{
+		float: right;
+		margin-right: -1em;
+		margin-bottom: -.05em;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+	}
+}
+
+
+@media ( max-width:768px ) {
+	.eb2{
+		width:49%;
+		margin:.5%;
+}
+
+}
+
+@media ( max-width:480px ) {
+	.eb2{
+		width:100%;
+		margin:.25em 0;
+	
+}
+
+}

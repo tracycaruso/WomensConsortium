@@ -1,0 +1,34 @@
+/**************************/
+/** css/ie.css **/
+/**************************/
+
+
+
+.default{
+	display:none;
+}
+
+.ie{
+	display:block;
+}
+
+
+
+.eb {
+    width: 24%;
+}
+
+.sf-menu li{
+	padding-top:15px;
+}
+
+
+.sf-menu li .btn-bd{
+
+	margin-top:-10px;
+}
+
+
+.btn-lg:after, a.btn-lg:after {
+   margin-left:49%;
+}

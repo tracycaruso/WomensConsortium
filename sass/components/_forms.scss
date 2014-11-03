@@ -1,0 +1,200 @@
+@import "../settings/settings";
+
+
+/**************************/
+/** components/_forms.scss **/
+/**************************/
+
+
+.field-group {
+	background-color:$form-background-color;
+	padding:$baseline/2;
+}
+
+.field-group label{
+	display: block;
+	color:$form-text-color;
+}
+
+.field-group input[type="text"], .field-group textarea{
+	color: #fff;
+	letter-spacing:1px;
+	background-color:$form-input-background-color;
+	padding:.65em;
+	
+	border:none;
+	-moz-border-radius: .25em;
+	-webkit-border-radius: .25em;
+	border-radius: .25em;
+	display:block;
+	
+	margin-bottom:5px;
+	width:100%;
+	
+	&:hover{
+	outline:none;
+	background-color:darken($form-input-background-color, 2%);
+}
+}
+
+.field-group input[type="submit"]{
+	margin-top:5px;
+	width: 45%;}
+
+
+
+// Primary Login Form
+
+.login a{
+	color:$form-text-color;
+	font-size:$h6-size;
+	text-decoration: underline;
+
+	&:hover{
+		color:lighten($form-text-color, 20%);
+	}
+}
+
+.login input[type="submit"]{
+	width:100%;
+}
+
+
+
+// Secondary Login Form & Partners
+
+.login-secondary, .partners{
+	background-color: $form-background-color-secondary;
+
+}
+
+.login-secondary div, .partners div{
+	width:50%;
+	padding-right:10px;
+	float: left;
+
+	
+}
+
+
+.partners{
+
+	ul{
+		margin:0px;
+		li{
+			background-color: $base-medium;
+		    border-radius: 100%;
+		    display: inline-block;
+		    height: 55px;
+		    margin: 0.15em 0.1em .6em;
+		    width: 55px;
+		}
+	}
+
+
+
+
+}
+
+
+
+
+/* Contact & Create Account */
+
+.contactPage, .account{
+main{
+	.row{
+			background-color: #fff;
+			width:50em;
+			margin:0 auto;
+		}
+
+		.col-6{
+			width:25em;
+
+			&:last-of-type{
+				padding-right:0px;
+
+			}
+		}
+	}
+}
+
+
+
+/* Contact & Create Account */
+
+.contactPage, .account{
+	main{
+
+
+		h1, address, p, ul, a{
+			color:$base-light;
+			text-align:left;
+		}
+		ul{
+			margin-left:0;
+			list-style-type: none;
+			li:first-of-type{
+				font-weight:bold;
+			}
+		}
+
+	
+	}
+
+	header{
+			margin-bottom: $content-margin;
+		}
+
+		footer{
+			margin-top: $content-margin/2;
+		}
+
+}
+
+
+
+
+@media ( max-width:768px ) {
+
+// Contact Us & Accounts Page	
+.contactPage, .account{
+	main{
+		.row{
+			width:40em;
+			
+			.col-6{
+				width:20em;
+				
+				&:nth-child(1){
+					padding:1em;
+				}
+			}
+		}
+	}
+}
+}
+
+
+@media ( max-width:480px ) {
+
+// Contact Us & Accounts Page	
+.contactPage, .account{
+	main{
+		.row{
+			width:100%;
+			
+			.col-6{
+				width:100%;
+				padding:0;
+				
+			}
+		}
+	}
+	header{
+		margin-bottom: 2em;
+	}
+}
+
+}

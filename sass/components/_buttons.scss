@@ -1,0 +1,158 @@
+@import "../settings/settings";
+
+
+/**************************/
+/** components/_buttons.scss **/
+/**************************/
+
+button,
+.btn,
+a.btn{
+	border: 0;
+	-moz-border-radius: $btn-roundness;
+	-webkit-border-radius: $btn-roundness;
+	border-radius: $btn-roundness;
+
+	background-color: $btn-default-bg;
+	color: $btn-default-text-color;
+	cursor: pointer;
+
+	line-height: 1;
+	font-family: inherit;
+	text-align: center;
+	text-decoration: none;
+
+	display: block;
+	padding: .75em 1.5em;
+	margin-bottom:.5em;
+	margin-top:.5em;
+	max-width:14em;
+
+	&:hover{
+		background-color: darken($btn-default-bg, 15%);
+		color: $btn-default-text-color;
+
+	}
+
+	&:active{
+		background-color: darken($btn-default-bg, 10%);
+		color: $btn-default-text-color;
+	}
+
+	&:focus{
+		outline: none;
+	}
+
+	&:last-of-type{
+		margin-bottom:2em;
+	}
+}
+
+a.full{
+	width:100%;
+	max-width: none;
+	
+	
+}
+
+
+.btn-pd, 
+a.btn-pd{
+	@extend .btn;
+	background-color: $btn-pd-bg;
+
+	&:hover{
+		background-color: darken($btn-pd-bg, 15%);
+	}
+
+	&:active{
+		background-color: darken($btn-pd-bg, 10%);
+	}
+
+}
+
+
+
+
+.btn-sl
+a.btn-sl{
+	@extend .btn;
+	background-color: $btn-sl-bg;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+
+	&:hover{
+		background-color: darken($btn-sl-bg, 15%);
+	}
+
+	&:active{
+		background-color: darken($btn-sl-bg, 10%);
+	}
+
+}
+
+.btn-sd,
+a.btn-sd{
+	@extend .btn;
+	background-color: $btn-sd-bg;
+
+	&:hover{
+		background-color: darken($btn-sd-bg, 15%);
+
+	}
+
+	&:active{
+		background-color: darken($btn-sd-bg, 10%);
+	}
+}
+
+.btn-bd, 
+a.btn-bd{
+	@extend .btn;
+	background-color: $btn-bd-bg;
+
+	&:hover{
+		background-color: darken($btn-bd-bg, 15%);
+	}
+
+	&:active{
+		background-color: darken($btn-bd-bg, 10%);
+	}
+
+}
+
+
+.btn-lg,
+a.btn-lg{
+	@extend .btn;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+
+	height:145px;
+	max-width:100%;
+	width:100%;
+
+	font-size: 1.375em;
+	margin-bottom:$baseline/2;
+	margin-top:$baseline/2;
+
+
+	&:after{
+
+		content:"\e132";
+		display:block;
+		
+		font-size: .85em;
+		font-family: 'icomoon';
+		padding-top:21px;
+		
+	}
+
+	&:last-of-type{
+		margin-bottom:$baseline/2;	
+	}
+
+
+}

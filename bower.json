@@ -1,0 +1,11 @@
+{
+  "name": "Women's Consortium",
+  "version": "1.0.0",
+  "dependencies": {
+  	"icomoon": "latest",
+  	"superfish": "latest",
+  	"picturefill" : "latest"
+  
+  
+  }
+}

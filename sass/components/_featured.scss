@@ -1,0 +1,88 @@
+@import "../settings/settings";
+
+/**************************/
+/** components/_featured.scss **/
+/**************************/
+
+// Event
+
+.featured-event{
+
+	.event{
+		background-color: #fff;
+		padding: 1em;
+		margin-top: 1.5em
+
+	}
+	.btn{
+		margin:.25em 0;
+	}
+
+	time{
+		display: block;
+		font-size:$h3-size;
+	}
+
+	time, address{
+		color:$featured-text-color;
+	}
+
+	h1,
+	h2,
+	h3,
+	h5
+	{
+		color:$accent-light;
+		text-align: left;
+	}
+}
+
+
+
+// Featured Section
+
+.featured {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5{
+		color:$base-light;
+
+		& + p{
+			color:$accent-xlight;
+		}
+	}
+	.row{
+		width:80%;
+		margin:2em auto;
+	}
+
+}
+
+.featured-img{
+	border-radius:100%;
+}
+
+
+// Img Block
+
+.img-block{
+	[class^="col-"]{
+		padding:0px;
+	}
+}
+
+
+
+@media ( max-width:480px ) {
+	.featured-img{
+		display: none;
+	}
+
+	.featured .row {
+    	width: 100%;
+	}	
+
+}
+

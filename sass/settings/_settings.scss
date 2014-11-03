@@ -1,0 +1,186 @@
+// Grid Variables
+
+$column-count : 12;
+$gutter : 1em;  
+
+
+
+// Color Variables
+
+// Purple
+$primary-light: #6a5c75;
+$primary-medium: #674f78;
+$primary-dark: #453A4D;
+
+// Teal
+$secondary-light: #a0cabe;
+$secondary-medium: #77b2a1;
+$secondary-dark: #82aa9e;
+
+// Peach 
+$tertiary-light: #f69c89;
+$tertiary-medium: #f09784;
+$tertiary-dark: #e08c7a;
+
+// Blue 
+$base-light: #464d68;
+$base-medium: #3c4359;
+$base-dark: #384052;
+$base-xdark: #283041;
+$base-xxdark: #21242B;
+
+// Brown 
+$accent-xlight: #747373;
+$accent-light: #fff5d6;
+$accent-medium: #cdae91;
+$accent-dark: #77695d;
+$accent-xdark: #67615b;
+
+
+
+// Typography Variables
+
+$text-color: #322E2A;
+$muted-text-color: lighten($text-color, 25%);
+$link-color: #fff;
+
+$h1-size: 1.875em;
+$h2-size: 1.25em;
+$h3-size: 1.125em;
+$h4-size: 1em;
+$h5-size: .875em;
+$h6-size: .75em;
+
+$baseline: 1.5em;
+$body-font-family:'Adelle W01 Regular', Helvetica, "Helvetica Neue", Arial, sans-serif;
+
+
+
+
+
+// Button Variables
+$btn-roundness :3px;
+
+$btn-small-font-size:.75em;
+$btn-large-font-size:2em;
+
+$btn-default-bg: $primary-medium;
+$btn-pd-bg: $primary-dark;
+
+$btn-sl-bg: $secondary-light;
+$btn-sd-bg: $secondary-dark;
+
+$btn-bd-bg: $base-dark;
+
+
+$btn-default-text-color: #fff;
+
+
+
+// Forms
+$form-background-color:$base-light;
+$form-background-color-secondary:$base-xdark;
+
+$form-input-background-color:$base-medium;
+
+$form-text-color:#BEBEBE;
+
+
+
+// Icons
+$icon-roundness :5px;
+
+$facebook-bg-color:#5071AA;
+$twitter-bg-color:#68C6E1;
+$google-bg-color:#d91f26;
+$linkedin-bg-color:#1586c0;
+
+$meta-light-text-color:#fff;
+$meta-dark-text-color: $primary-medium;
+
+// Emphasis Block
+
+$emphasis-style-one-bd: $tertiary-dark;
+$emphasis-style-two-bd: $secondary-dark;
+$emphasis-style-three-bd: $accent-xdark;
+$emphasis-style-four-bd: $primary-medium;
+
+$emphasis-bg:#fff;
+$emphasis-bg-hover: #f2f2f2;
+
+$emphasis-heading-color: $primary-medium;
+
+$emphasis-hr-color: $accent-medium;
+
+$emphasis-text-color: $accent-xlight;
+
+
+// Emphasis Block 2
+
+$emphasis2-hr-color: $secondary-light;
+$emphasis2-text-color: $accent-xlight;
+
+
+// Featured
+
+$featured-text-color: $base-light;
+
+
+// Nav
+
+$navbar-submenu-bg: $base-light;
+
+
+// Accordion Variables
+$accordion-header-bg: $tertiary-medium;
+$accordion-bg: $tertiary-dark;
+$accordion-inactive-bg-color: $tertiary-medium;
+
+
+
+// Page Level
+$content-margin:6em;
+$content-padding:3em;
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

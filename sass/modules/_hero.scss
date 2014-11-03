@@ -1,0 +1,26 @@
+@import "../settings/settings";
+
+/**************************/
+/** modules/_hero.scss **/
+/**************************/
+
+.hero{
+	h1{
+		color:$base-light;
+	}
+
+	padding-left:15%;
+	padding-right: 15%;
+}
+
+
+
+
+/** Mobile **/
+@media ( max-width:480px ) {
+	.hero{
+		padding-left:2%;
+		padding-right: 2%;
+	}
+	
+}

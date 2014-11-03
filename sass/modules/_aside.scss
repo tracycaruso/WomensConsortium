@@ -1,0 +1,106 @@
+@import "../settings/settings";
+
+/**************************/
+/** modules/_aside.scss **/
+/**************************/
+
+aside{
+	margin-left: -25%;
+}
+
+
+
+
+.accordion {
+	background-color:$accordion-bg;
+	padding-bottom: 50px;
+	h6{
+		padding:2em;
+		color:#fff;
+	}
+	ul{
+		list-style:none;
+		margin:0px;
+
+		&.accordion-element-content li{
+			border-bottom: 1px solid #fff;
+			padding: .5em 3em;
+
+
+		}
+
+	
+	li{
+		a:after{
+				content: "\e132";
+				
+				color:#fff;
+				font-style:normal;
+				font-family:icomoon;
+				font-size:1em;
+				padding:.5em;
+
+			}
+	}
+	
+	}
+
+}
+
+
+.accordion-element-title {
+	background-color:$accordion-header-bg;
+	border-bottom: 1px solid #fff;
+
+
+	text-decoration: none;
+
+	display: block;
+	padding: .5em .5em .5em 1.5em;
+
+
+	.accordion-element:last-child & {
+		border-bottom: 0;
+	}
+}
+
+.accordion-element-content {
+	color: #fff;
+	display: none;
+
+
+	p{
+		padding:.5em;
+
+		&:last-child {
+		margin-bottom: 0;
+		}
+	}
+}
+
+
+
+
+
+
+/* Tablet */
+
+
+@media ( max-width:768px ) {
+
+	.accordion {
+		padding-top: 5em;
+	}
+
+}
+
+
+
+
+/* Mobile */
+
+@media ( max-width:480px ) {
+	.accordion{
+		display:none;
+	}
+}

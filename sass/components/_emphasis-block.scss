@@ -1,0 +1,79 @@
+@import "../settings/settings";
+
+
+/**************************/
+/** components/_emphasis-block.scss **/
+/**************************/
+
+.eb{
+	background-color:$emphasis-bg;
+	padding:.5em 1em 2em;
+	border-top: .75em solid $emphasis-style-one-bd;
+	width: 24.75%;
+	margin: 0 0 0 .333333%;
+
+	&:first-of-type{
+		margin:0px;
+	}
+
+	&:hover{
+		background-color: $emphasis-bg-hover;
+	}
+
+	&:nth-child(2n){
+		border-color: $emphasis-style-two-bd;
+	}
+
+	&:nth-child(3n){
+		border-color: $emphasis-style-three-bd;
+	}
+
+	&:nth-child(4n){
+		border-color: $emphasis-style-four-bd;
+	}
+
+	h3,
+	h3 a{
+		color:$emphasis-heading-color;
+		
+
+		&:hover{
+			color:darken($emphasis-heading-color, 15%);
+		}
+	}
+
+	hr{
+		background-color: $emphasis-hr-color;
+	}
+
+	p{
+		color: $emphasis-text-color;
+		font-style:italic;
+	}
+
+	a{
+		&.icon-arrow-secondary {
+			text-align:center;
+		}
+	}
+}
+
+
+
+
+@media ( max-width:768px ) {
+	.eb, .eb:first-of-type{
+		width:49%;
+		margin:.5%;
+}
+
+}
+
+@media ( max-width:480px ) {
+	.eb, .eb:first-of-type{
+		width:100%;
+		margin:.25em 0;
+	
+}
+
+}

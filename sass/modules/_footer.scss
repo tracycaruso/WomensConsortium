@@ -1,0 +1,37 @@
+@import "../settings/settings";
+
+/**************************/
+/** modules/_footer.scss **/
+/**************************/
+
+/* Footer */
+footer{
+
+	background-color: $base-xdark;
+	padding: $baseline/2 0;
+
+	.col-6{
+		float:right;
+	}
+
+
+}
+
+.copyright{
+	background-color: $base-xxdark;
+	
+}
+
+
+
+/** Mobile **/
+@media ( max-width:480px ) {
+
+	footer{
+
+		.col-6{
+			float:none;
+			}
+	}
+
+}

@@ -1,0 +1,185 @@
+@import "../settings/settings";
+
+/**************************/
+/** components/_typography.scss **/
+/**************************/
+
+
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=cf9d2cc6-2e11-4722-8dc1-96d8de95ae03");
+@font-face{
+font-family:"Adelle W01 Regular";
+src:url("../fonts/e800d24d-133b-4293-a15b-611f67139c09.eot?#iefix");
+src:url("../fonts/e800d24d-133b-4293-a15b-611f67139c09.eot?#iefix") format("eot"),
+url("../fonts/89fe91e2-46a0-4e3b-8735-78b3de8da38f.woff") format("woff"),
+url("../fonts/152fa65e-e42f-431d-a37f-a66d10903310.ttf") format("truetype"),
+url("../fonts/6ad1d18a-0166-4178-812f-07e16b64000b.svg#6ad1d18a-0166-4178-812f-07e16b64000b") format("svg");
+}
+
+
+
+html,
+input,
+button,
+textarea{
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+body{
+	color: $text-color;
+	font-family: $body-font-family;
+	line-height: $baseline;
+	
+}
+
+
+
+a,
+a:visited{
+	color: $link-color;
+	text-decoration:none;
+
+	&:hover{
+		color: $text-color;
+	}
+}
+
+
+hr{
+	border:0px;
+
+	background-color: $primary-medium;
+
+	height: 1px;
+	margin: .5em 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	margin: $baseline / 2 0 $baseline / 2;
+	padding-top: $baseline /2;
+
+
+	color:#fff;
+	font-family: $body-font-family;
+	font-weight:normal;
+	line-height: 1.2;
+	
+}
+
+h1{font-size: $h1-size;}
+h2{font-size: $h2-size; color: $base-light;}
+h3{font-size: $h3-size; color: $primary-medium;}
+h4{font-size: $h4-size; color: $base-dark;}
+h5{font-size: $h5-size;}
+h6{font-size: $h6-size; color: $primary-medium; font-style:italic;}
+
+
+
+h1{
+	text-align: center;
+	padding-top: 0px;
+}
+
+h4,
+h5,
+h6{
+	line-height: 1.5;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+
+}
+
+p, blockquote, ul{
+	margin-bottom: $baseline * 1.5;
+	line-height:2;
+}
+
+
+ul,
+ol{
+
+	list-style-type: none;
+	line-height:1.5;
+}
+
+
+ul.emphasis{
+	font-style:italic;
+	color:$accent-dark;
+	font-size:.875em;
+}
+
+blockquote{
+	color: $base-light;
+	font-style:normal;
+	margin-left: auto;
+	margin-right: auto;
+	
+
+}
+
+
+
+cite{
+	display: block;
+	padding-top:2em;
+	line-height:1.5em;
+}
+
+address{
+	font-style:normal;
+	margin-bottom:$baseline;
+}
+
+
+.copyright{
+	
+	p{	
+		color: #D8D8D8;
+		font-size: .675em;
+		letter-spacing:.15em;
+		text-transform:uppercase;
+		padding:1em 0 0;
+		text-align:center;
+	}
+}
+
+/* Blog */
+
+article:last-of-type {
+	padding-bottom:1em;
+		hr{
+			display:none;
+		}
+}
+
+/* Size & Weight */
+.xl{font-size:2.125;}
+
+/* Purple */
+.pl{color: $primary-light;}
+.pm{color: $primary-medium;}
+.pd{color: $primary-dark;}
+
+/* Blue */
+.bl{color: $base-light;}
+.bm{color: $base-medium;}
+.bd{color: $base-dark;}
+.bx{color: $base-xdark;}
+
+/* Brown */
+.al{color: $accent-light;}
+.am{color: $accent-medium;}
+.ad{color: $accent-dark;}
+.ax{color: $accent-xdark;}
+
+
+

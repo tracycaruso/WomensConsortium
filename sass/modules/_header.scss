@@ -1,0 +1,403 @@
+@import "../settings/settings";
+
+/**************************/
+/** components/_header.scss **/
+/**************************/
+
+/** Universal **/
+
+header{
+	min-height:125px;
+	position: fixed;
+	width:100%;
+}
+
+header + div, header + main{
+	padding-top: 125px;
+}
+
+header + div.slider,
+.post main, 
+.blog main{
+	padding-top: 75px;
+}
+
+
+.navbar-container{
+	nav{
+		
+		background-color: $primary-light;
+		font-size:1em;
+		height:75px;
+		padding-left:5%;
+		padding-right:5%;
+		width:100%;
+		z-index: 100;	
+		
+	}
+	ul{
+		list-style-type:none;
+
+		&.login{
+			margin:-0.8em 0 0 -4.2em;
+		}
+	}
+
+
+}
+
+.ie{
+	display:none ;
+}
+
+
+
+
+/* Superfish Essential Styles */
+
+.sf-menu{
+	margin: 0;
+	padding: 0;
+	list-style:  none;
+}
+
+.sf-menu{
+	li{
+		position: relative;
+	}
+
+	> li{
+		float: left;
+	}
+
+	ul{
+		position: absolute;
+		display:none;
+		top: 100%;
+		left: 0px;
+		z-index: 99;
+	}
+
+	li:hover > ul,
+	li.sfHover > ul{
+		display:block;
+	}
+
+	a{
+		display:block;
+	
+	}
+
+	ul ul{
+		top:0px;
+		left:100%;
+	}
+}
+
+
+
+/* Superfish Menu Skin */
+
+
+.sf-menu{
+	
+	padding:.65em ;
+	margin:0 auto;
+
+
+		li{
+		width:10.75%;
+
+		&:nth-child(5){
+			width: 14%;
+		}
+	}
+
+
+	ul{
+	
+		li{
+			background-color: $base-light;
+		}
+	}
+	a{
+		&:not(.btn-bd){
+			padding: .75em 2.5em;
+		}
+		
+		&.btn-bd{
+			margin-top: .25em;
+			
+		}
+	}
+
+
+
+	li{
+		white-space:nowrap;
+		&:not(.logo){
+		
+		}
+
+
+		&.logo{
+			
+			margin-top:-1em;
+
+			img{
+				width:100%;
+				margin: 0 auto;
+			}
+		}
+
+	}
+
+
+}
+
+
+
+/** Tablet **/
+
+	
+.rwd-menu{
+	display:none;
+	float:right;
+
+	li {
+		padding-top:35px;
+		width:auto;
+
+		
+		&:nth-child(1),
+		&:nth-child(8),
+		&:nth-child(9) {
+			padding-top:0px;
+			position: absolute;
+			top:5px;
+		}
+		
+		&:nth-child(1){
+			top:5px;
+			left:0px;
+
+		}
+		&:nth-child(5){
+			width:auto;
+		}
+		&:nth-child(8){
+			right:100px;
+		}
+
+		&:nth-child(9){
+			right:10px;
+
+		}
+			
+	}
+		
+}
+
+
+
+/** Mobile **/
+	
+.mobile-menu{
+	display:none;
+	margin-left:150px;
+
+	
+	li{
+		float:none;
+		width:auto;
+
+
+		&.logo{
+			position: absolute;
+			top:22px;
+			left:6px;
+			
+			
+		}
+
+		&:nth-child(5){
+			width:auto;
+		}
+
+		&:last-of-type{
+			position: absolute;
+			top:3px;
+			right:5px;
+		}
+
+	}
+
+
+}
+
+
+
+
+
+/** Responsive Min-Width 1400px **/
+
+@media (min-width:1400px ) {
+	header + div, header + main{
+		padding-top: 170px;
+	} 
+}
+
+
+
+
+/** Responsive Max-Width 1400px **/
+@media ( max-width:1400px ) {
+	.sf-menu{
+	
+		a{
+			&:not(.btn-bd){
+				padding: .75em 1.4em;
+			}
+		}
+	} 
+}
+
+
+
+
+
+/** Responsive Max-Width 1024px **/
+@media ( max-width:1024px ) {
+	header{
+		min-height:90px;
+	}
+
+	header + div, header + main{
+		padding-top: 90px;
+	}
+
+
+	.navbar-container{
+		nav{
+			font-size:.875em;
+		}
+
+		ul{
+
+		&.login{
+			margin:-0.05em 0 0 -5.2em;
+			}
+		}
+	}
+		
+	.sf-menu{
+		a{
+			&:not(.btn-bd){
+				padding: .75em;
+			}
+		}
+	}
+} 
+
+
+/** Responsive Max-Width 768px **/
+@media ( max-width:768px ) {
+	.navbar-container{
+		nav{
+			height:90px;
+			z-index: 100;
+			width:100%;
+		}
+		
+		ul{
+			list-style-type:none;
+
+			&.login{
+				margin: 1.2em -0.75em 0 -7.2em;
+			}
+		}
+	}
+	
+	.sf-menu{
+		display:none;
+	}
+
+	.rwd-menu{
+		display:block;
+	
+	} 
+
+
+}
+
+
+/** Responsive Max-Width 580px **/
+@media ( max-width:580px ) {
+	.rwd-menu{
+		a{
+			&:not(.btn-bd){
+				padding:.75em .35em;
+			}
+		}
+
+	li.logo {
+    	 width: 23%;
+		}
+	} 
+}
+
+
+
+/** Responsive Max-Width 480px **/
+@media ( max-width:480px ) {
+	header{
+		min-height:160px;
+	}
+
+	header + div, header + main{
+		padding-top: 160px;
+	}
+
+	header + div.slider,
+	.post main, 
+	.blog main{
+		padding-top: 160px;
+		}
+	
+	.navbar-container {
+		nav {
+			height: 160px;
+			}
+		ul{
+
+			&.login{
+				margin:6.5em -0.75em 0 -10em;
+			}
+		}
+	}
+
+	.rwd-menu{
+		display:none;
+	}
+
+	.mobile-menu{
+		display:block;
+
+		li{
+			a:not(.btn-bd){
+				padding:0px;
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
